@@ -1,5 +1,5 @@
 public class BST {
-	static class Node{
+	static class Node{ //creating a node
 		int data;
 		Node left;
 		Node right;
@@ -9,7 +9,7 @@ public class BST {
 		}
 	}
 	
-	public static Node insert(Node root, int val){
+	public static Node insert(Node root, int val){ //insertion in node
 		if(root == null){
 			root = new Node(val);
 			return root;
@@ -24,7 +24,7 @@ public class BST {
 		return root;
 	}
 	
-	public static void inorder(Node root){
+	public static void inorder(Node root){ //inOrder Trversal
 		if(root == null){
 			return;
 		}
